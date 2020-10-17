@@ -1,0 +1,12 @@
+
+
+.box{
+  border-style: solid;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.button{
+  float: right;
+  margin-top: -2px
+}

@@ -1,0 +1,10 @@
+
+<div class="box" *ngFor="let data of arrData1">
+  <div *ngIf="data.name">Name: <span style="margin-left: 100px;font-weight: bold;">{{data.name}}</span></div>
+  <div *ngIf="data.category">Category: <span style="margin-left: 79px;font-weight: bold;">{{data.category}}</span></div>
+  <div *ngIf="data.latestVersion">latest Version:<span style="margin-left: 56px;font-weight: bold;">{{data.latestVersion}}</span></div>
+  <div *ngIf="data.documentation">Documentation: <span style="margin-left: 41px;font-weight: bold;">{{data.documentation}}</span></div>
+  <div *ngIf="!data.name">{{data.description}}</div>
+  <button class="button" (click)="showDescription(data)" *ngIf="data.name">Description</button>
+  <button class="button" (click)="showMainContent(data)" *ngIf="!data.name">Back</button>
+</div>
